@@ -109,7 +109,7 @@ console.log(getCircleArea())
 // 11) Use addEventListener to listen for a click. The callback should turn the 
 //     event target's text into a different color. 
 
-document.body.addEventListener("click", (e) => {e.target.style.color = "blue"})
+document.querySelector("#hero").addEventListener("click", (e) => {e.target.style.color = "#ffcc99"})
 
 // 12) Create a for loop that console logs all the even numbers up to 22 not 
 //     including 0.
@@ -178,7 +178,7 @@ titleInput.focus()
 const renderLyrics = async () =>
 {
     /* Remove previous results if any */
-    if (document.contains(document.querySelector(".results"))){document.querySelector("#results").remove()}
+    if (document.contains(document.querySelector(".results"))){document.querySelector(".results").remove()}
 
     /* Grab input values */
     let title = titleInput.value
